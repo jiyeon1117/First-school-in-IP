@@ -36,6 +36,43 @@
   <p class="small-banner-title">Q & A</p>
   <p class="small-banner-text">궁금한 사항을 글로 작성하세요!</p>
 
+  <form method = "get" action = "write_action.php">
+    <table style="padding-top:50px" align = center width=700 border=0 cellpadding=2 >
+      <tr>
+      <td height=25 align= center bgcolor=#ccc><font color=white> 글쓰기</font></td>
+      </tr>
+      <tr>
+      <td bgcolor=white>
+      <table class = "table2">
+        <tr>
+          <td>작성자</td>
+          <td><input type = text name = name size=20> </td>
+        </tr>
+
+        <tr>
+          <td>항목</td>
+          <td><input type = text name = category size=10></td>
+        </tr>
+
+        <tr>
+          <td>제목 </td>
+          <td><input type = text name = title size=20></td>
+        </tr>
+
+        <tr>
+          <td>내용</td>
+          <td><textarea name = content cols=50 rows=8></textarea></td>
+        </tr>
+
+        </table>
+
+        <center>
+        <input type = "submit" value="작성">
+        </center>
+      </td>
+      </tr>
+    </table>
+    </form>
   
 
   </body>
