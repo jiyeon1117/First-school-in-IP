@@ -5,12 +5,6 @@
   margin-top: 46px;
 }
 
-@media screen and (max-width: 1200px) {
-  #service {
-    display:none;
-  }
-}
-
 .service-title-text{
   position: absolute;
   font-family: "Noto Sans KR";
@@ -20,12 +14,6 @@
   font-size: 30pt;
   color: #010101;
   white-space: nowrap;
-}
-
-@media screen and (max-width: 1200px) {
-  .service-title-text{
-    margin-top: 195px;
-  }
 }
 
 .service-subtext1{
@@ -51,6 +39,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #service {
+    display: none;
+  }
+  .service-title-text{
+    margin-top: 195px;
+  }
   .service-subtext1{
     margin-top: 280px;
   }

@@ -1,23 +1,21 @@
 @charset "utf-8";
 
 .function{
-  display: block;
-  position: absolute;
+  margin-left: 50%;
+  position: relative;
+  margin-top: 272px;
+
   font-family: "Noto Sans KR";
   font-weight: bold;
   font-size: 30pt;
   color: #010101;
   white-space: nowrap;
-  top: 1875px;
-  left: 830px;
 }
 
 .func-box{
+  position: relative;
   width: 1180px;
   height: 700px;
-  position: absolute;
   border-radius: 22px;
   box-shadow: 0px 0px 27px 2px #f4f4f4;
-  top: 2000px;
-  left: 370px;
 }

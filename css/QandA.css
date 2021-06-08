@@ -5,7 +5,31 @@
   font-family: noto;
 }
 
-.div1 {
+.div2 {
+  width: 280px;
+  height: 100px;
+  float: left;
+
+  margin-right: 20px;
+
+  color: white;
+  display: flex;
+
+  
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color:#acacac;
+  border-radius: 20px;
+}
+
+.clicked {
+  background-color: #007b4d;
+  box-shadow: 0px 0px 27px 2px #f4f4f4
+}
+
+/* .div1 {
   position: absolute;
   width: 280px;
   height: 100px;
@@ -18,60 +42,7 @@
   justify-content: center;
   font-family: noto;
   font-size: 20px;
-}
-
-.div2 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 670px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-  
-}
-
-.div3 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 970px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-}
-
-.div4 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 1270px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-}
-
-.click_btn {
-  background: #007b4d;
-  font-family: noto;
-  font-size: 20px;
-  color: white;
-}
+} */
 
 .listview{ /* 위에 있는 상단바 크기 지정 */
   line-height:5em;        
@@ -168,8 +139,9 @@ ul, li{   /* listview 안에 사용하는 것들 */
   border-radius: 20px;
   margin-top: 800px;
   right: 369px;
-  font-family: noto;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
   font-size: 20pt;
-  text-color:#ffffff;
+  color: white;
   text-align: center;
 }
