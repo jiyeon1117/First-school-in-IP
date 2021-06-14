@@ -50,16 +50,6 @@
           <td>내용</td>
           <td><textarea name = content id="content" type = text cols=85 rows=15 placeholder="내용입니다." required></textarea></td>
           </tr>
-
-          <tr>
-          <td>답글</td>
-          <td><textarea name = content id="content" type = text cols=85 rows=3 placeholder="내용입니다." required></textarea></td>
-          </tr>
-
-          <tr>
-          <td>비밀번호</td>
-          <td><input type = password name = pw size=10 maxlength=10></td>
-          </tr>
           </table>
 
           <center>

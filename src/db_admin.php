@@ -1,47 +1,72 @@
 <meta charset="UTF-8">
 <?php
-   include('./db_conn.php');
+   include('db_conn.php');
    $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
    $result = mysqli_query($conn, $sql);
    if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
-        echo .$row["title"]."&nbsp".$row["categorie"]. $row["content"]. $row["date"]. "<br><br>";
+        echo $row["title"]."&nbsp".$row["categorie"].$row["content"].$row["date"]."<br><br>";
     }
    }else{
     echo "질문이 없습니다.";
    }
    mysqli_close($conn);
 ?>
-<!-- 
+<!DOCTYPE html>
 <html>
     <head>
-        <title>첫등교는 IP로!</title>
+    <style>
+        table.table2{
+            border-collapse: separate;
+            border-spacing: 1px;
+            text-align: left;
+            line-height: 1.5;
+            border-top: 1px solid #ccc;
+            margin : 20px 10px;
+        }
+        table.table2 tr {
+            width: 100px;
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+        }
+        table.table2 td {
+            width: 100px;
+            padding: 10px;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
     </head>
-    <body>
-        <table class = "list-table">
+<body>
+    <div class ="container">
+        <table class ="table2">
             <thead>
-                <tr>
-                    <td width = "70">번호</th>
-                    <th width="500">제목</th>
-                    <th width="120">카테고리</th>
-                    <th width="100">작성일</th>
-                </tr>
-            </tread>
-            <?php
-                $sql = "select * from qna order by num desc limit 0, 6";
-                $title = $qna["title"];
-            ?>
+                <caption>글 읽기</caption>
+            </thead>
             <tbody>
                 <tr>
-                    <td width="70"><?php echo $qna['num']; ?></td>
-                    <td width="500"><a href=""><?php echo $qna;?></a></td>
-                    <td width="120"><?php echo $qna['title']?></td>
-                    <td width="100"><?php echo $qna['categorie']?></td>
-                    <td width="100"><?php echo $qna['date']; ?></td>
+                    <th>제목 : </th>
+                    <td><?php echo $data['title'];?></td>
+                </tr>
+                <tr>
+                    <th>카테고리 : </th>
+                    <td><?php echo $data['categorie'];?></td>
+                </tr>
+                <tr>
+                    <th>내용 : </th>
+                    <td><?php echo $data['content'];?></td>
+                </tr>
+                <tr>    
+                    <th>답글 : </th>
+                    <td><?php echo $data['answer'];?></td>
+                </tr>
+                <tr>
+                    <th>날짜 : </th>
+                    <td><?php echo $data['date'];?></td>
                 </tr>
             </tbody>
         </table>
-    /*수정버튼, 리스트 확인 못함*/
     </body>
-</html>
--->
+    </
