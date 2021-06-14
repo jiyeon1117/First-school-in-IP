@@ -1,17 +1,4 @@
 <meta charset="UTF-8">
-<?php
-   include('db_conn.php');
-   $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
-   $result = mysqli_query($conn, $sql);
-   if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        echo $row["title"]."&nbsp".$row["categorie"].$row["content"].$row["date"]."<br><br>";
-    }
-   }else{
-    echo "질문이 없습니다.";
-   }
-   mysqli_close($conn);
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,33 +27,83 @@
     </style>
     </head>
 <body>
+    <?php ?>
+    <script>
+        
+    </script>
     <div class ="container">
         <table class ="table2">
-            <thead>
-                <caption>글 읽기</caption>
-            </thead>
             <tbody>
                 <tr>
-                    <th>제목 : </th>
-                    <td><?php echo $data['title'];?></td>
+                <th>제목 : </th>
+                <td><?php include('db_conn.php');
+                        $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo $row["title"];
+                            }
+                        }else{
+                            echo "질문이 없습니다.";
+                        }
+                        mysqli_close($conn);
+                        ?><br>
+                </td>
                 </tr>
                 <tr>
                     <th>카테고리 : </th>
-                    <td><?php echo $data['categorie'];?></td>
+                    <td><?php include('db_conn.php');
+                        $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo $row["categori"];
+                            }
+                        }else{
+                            echo "질문이 없습니다.";
+                        }
+                        mysqli_close($conn);
+                        ?><br></td>
                 </tr>
                 <tr>
                     <th>내용 : </th>
-                    <td><?php echo $data['content'];?></td>
-                </tr>
-                <tr>    
-                    <th>답글 : </th>
-                    <td><?php echo $data['answer'];?></td>
+                    <td><?php include('db_conn.php');
+                        $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo $row["content"];
+                            }
+                        }else{
+                            echo "질문이 없습니다.";
+                        }
+                        mysqli_close($conn);
+                        ?><br></td>
                 </tr>
                 <tr>
                     <th>날짜 : </th>
-                    <td><?php echo $data['date'];?></td>
+                    <td><?php include('db_conn.php');
+                        $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null";
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo $row["date"];
+                            }
+                        }else{
+                            echo "질문이 없습니다.";
+                        }
+                        mysqli_close($conn);
+                        ?><br><br><br></td>
                 </tr>
+
+                <tr>
+                <td>답변 내용: </td>
+                <td><textarea name=admin-content cols=50 rows=8></textarea></td>
+                
+                </tr>
+                
             </tbody>
+        <input type="submit" value="답변하기">
         </table>
     </body>
-    </
+</html>
