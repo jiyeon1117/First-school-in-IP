@@ -7,12 +7,387 @@
 
 .card{
   position: relative;
-  width: 1180px;
+  width: 1200px;
   height: 660px;
   margin-top: 88px;
   margin-left: 370px;
   border-radius: 20px;
-  background-color: wheat;
-  box-shadow: 2px 1px 27px 2px #f4f4f4;
+  background-color: white;
+  box-shadow: 2px 1px 27px 2px #cecdcd;
   text-align: center;
+}
+
+#title{
+  position: relative;
+  width: 145px;
+  height: 60px;
+  top: 30px;
+  font-size: 26pt;
+  margin-left: 520px;
+  font-family: noto;
+  text-decoration: black;
+  font-weight: 800;
+}
+
+#btn_image{
+  position: relative;
+  width: 49px;
+  height: 49px;
+  margin-left: 1040px;
+  margin-top: -30px;
+}
+
+.class1{
+  position: relative;
+  width: 630px;
+  height: 430px;
+  margin-left: 535px;
+  top: -500px;
+}
+
+.box{
+  position: relative;
+  width: 230px;
+  height: 480px;
+  top:-980px;
+  margin-left: 1283px;
+  background-color: #ebebeb;
+  overflow: auto;
+}
+
+#title_box{
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 37px;
+  font-size: 18pt;
+  text-align: center;
+  font-family: noto;
+  font-weight: 800;
+  text-decoration: black;
+}
+
+/*
+#test {
+  width: 200px;
+  height: 400px;
+  overflow: auto;
+}
+
+#box::-webkit-scrollbar {
+  width: 6px; /*스크롤바의 너비
+}
+
+#box::-webkit-scrollbar-thumb {
+  background-color: #005438; /*스크롤바의 색상
+}
+
+#box::-webkit-scrollbar-track {
+  background-color: white; /*스크롤바 트랙 색상
+}
+*/
+
+#circle_show{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 73px;
+  margin-left: 40px;
+}
+
+#circle_text{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 68px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show1{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 110px;
+  margin-left: 40px;
+}
+
+#circle_text1{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 105px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show2{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+#circle_text2{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 145px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show3{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 190px;
+  margin-left: 40px;
+}
+
+#circle_text3{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 185px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show4{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 230px;
+  margin-left: 40px;
+}
+
+#circle_text4{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 225px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show5{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 270px;
+  margin-left: 40px;
+}
+
+#circle_text5{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 265px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show6{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 310px;
+  margin-left: 40px;
+}
+
+#circle_text6{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 305px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show7{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 350px;
+  margin-left: 40px;
+}
+
+#circle_text7{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 345px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show8{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 390px;
+  margin-left: 40px;
+}
+
+#circle_text8{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 385px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show9{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 430px;
+  margin-left: 40px;
+}
+
+#circle_text9{
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  margin-top: 425px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show10{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 470px;
+  margin-left: 40px;
+}
+
+#circle_text10{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 465px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show11{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 510px;
+  margin-left: 40px;
+}
+
+#circle_text11{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 505px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show12{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 550px;
+  margin-left: 40px;
+}
+
+#circle_text12{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 545px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show13{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 590px;
+  margin-left: 40px;
+}
+
+#circle_text13{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 585px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show14{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 630px;
+  margin-left: 40px;
+}
+
+#circle_text14{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 625px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
+}
+
+#circle_show15{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 670px;
+  margin-left: 40px;
+}
+
+#circle_text15{
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  margin-top: 665px;
+  margin-left: 65px;
+  font-size: 15pt;
+  font-family: noto;
+  text-decoration: black;
 }

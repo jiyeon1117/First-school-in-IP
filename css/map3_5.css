@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@font-face{
+  src: url("font/NotoSansCJKKr-Bold.otf");
+  font-family: noto;
+}
+
+.card{
+  position: relative;
+  width: 1180px;
+  height: 660px;
+  margin-top: 88px;
+  margin-left: 370px;
+  border-radius: 20px;
+  background-color: wheat;
+  box-shadow: 2px 1px 27px 2px #f4f4f4;
+  text-align: center;
+}
