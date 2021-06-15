@@ -1,6 +1,6 @@
 <?php include('db_conn.php');
 
-    $sql = "SELECT title, categorie, content, date FROM qna WHERE num = num";
+    $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is null and num = num";
     $result = mysqli_query($conn, $sql);
 
     echo "<style>
@@ -54,5 +54,5 @@
     mysqli_close($conn);
     echo "<table><tbody>";
 ?>
-<input type="submit" value="답변하기">
+<input type="submit" onclick="location.href='answer.php'" value="답변하기">
 <!-- https://itlove.tistory.com/1695 -->

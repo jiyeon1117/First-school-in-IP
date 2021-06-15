@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <?php
-   include('./db_conn.php');
+   include('src/db_conn.php');
 
    $sql = "SELECT title, categorie, content, date FROM qna WHERE answer is not null";
    $result = mysqli_query($conn, $sql);
