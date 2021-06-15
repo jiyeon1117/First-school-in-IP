@@ -99,7 +99,6 @@
                 <tr>
                 <td>답변 내용: </td>
                 <td><textarea name=admin-content cols=50 rows=8></textarea></td>
-                
                 </tr>
                 
             </tbody>
