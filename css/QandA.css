@@ -25,22 +25,45 @@ button{
   font-size: 18pt;
 }
 
-
 .div5 {
+  width: 280px;
+  height: 100px;
+  float: left;
+
+  margin-right: 20px;
+
+  color: white;
+  display: flex;
+
+  
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  background-color:#acacac;
+  border-radius: 20px;
+}
+
+.clicked {
+  background-color: #007b4d;
+  box-shadow: 0px 0px 27px 2px #f4f4f4
+}
+
+/* .div1 {
   position: absolute;
   width: 152px;
   height: 60px;
   background-color:#007b4d;
   border-radius: 20px;
-  margin-top: 800px;
-  margin-left: 369px;
-  font-family: "Noto Sans KR Medium";
-  font-size: 20pt;
-  color:#ffffff;
-  text-align: center;
-  cursor: pointer;
-}
 
+  margin-top: 99px;
+  left: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto;
+  font-size: 20px;
+} */
 
 .listview{ /* 위에 있는 상단바 크기 지정 */
   line-height:5em;        
@@ -127,4 +150,18 @@ ul, li{   /* listview 안에 사용하는 것들 */
 
 .left {
   text-align : left;
+}
+.div5 {
+  position: absolute;
+  width: 152px;
+  height: 60px;
+  background-color:#007b4d;
+  border-radius: 20px;
+  margin-top: 800px;
+  right: 369px;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 20pt;
+  color: white;
+  text-align: center;
 }
