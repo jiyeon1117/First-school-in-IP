@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+@font-face{
+  src: url("font/NotoSansCJKKr-Bold.otf");
+  font-family: noto;
+}
+
+.div1 {
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color:#acacac;
+  border-radius: 20px;
+  margin-top: 99px;
+  left: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto;
+  font-size: 20px;
+}
+
+.div2 {
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color:#acacac;
+  border-radius: 20px;
+  margin-top: 99px;
+  left: 670px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto;
+  font-size: 20px;
+  
+}
+
+.div3 {
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color:#acacac;
+  border-radius: 20px;
+  margin-top: 99px;
+  left: 970px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto;
+  font-size: 20px;
+}
+
+.div4 {
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background-color:#acacac;
+  border-radius: 20px;
+  margin-top: 99px;
+  left: 1270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: noto;
+  font-size: 20px;
+}
+
+.click_btn {
+  background: #007b4d;
+  font-family: noto;
+  font-size: 20px;
+  color: white;
+}
+
+.listview{ /* 위에 있는 상단바 크기 지정 */
+  line-height:5em;        
+  font-family: noto;
+}
+
+ul, li{   /* listview 안에 사용하는 것들 */
+  list-style:none;
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+
+#mainWrapper{ /* listview 안에 있는 기본적인 틀  */
+  position: absolute;
+  width: 1183px;
+  height: 606px;
+  
+}
+
+#mainWrapper > ul > li:first-child {
+  text-align: center;
+  font-size:16pt;
+  vertical-align:middle; /* 안에 있는 요소들의 수직정렬를 위해 사용 */
+  line-height:30px;
+}
+
+#ulTable { /* listview 안에 있는 위치적인 요소들 */
+  margin-top: 350px;
+  margin-left: 373px;
+  width: 1183px;
+  height: 606px;
+}
+  
+#ulTable > li:first-child > ul > li { /* 위에 있는 상단바 색상 및 폰트 지정 */
+  background-color:#fcf9f9;
+  font-weight:bold;
+  text-align:center;
+}
+
+#ulTable > li > ul { /* 행의 모든 크기 및 padding 담당 */
+  clear:both; /* 사진 주위로 글자가 따라 붙지 않게 하는 것 */
+  padding:0px auto;
+  position: relative;
+}
+#ulTable > li > ul > li { /* 열의 모든 크기를 담당 */
+  float:left;  /* 정렬하기 위해 사용한 것 */
+  font-size:16pt; 
+  border-bottom:1px solid silver;  /* 선 색상 */
+  vertical-align:baseline; /* 부모 요소의 기준 선에 맞추는 것 */
+}    
+
+#ulTable > li > ul > li:first-child {    /*No 열 크기*/
+  width:17%;
+} 
+#ulTable > li > ul > li:first-child +li {  /*제목 열 크기*/
+  width:63%;
+  
+} 
+#ulTable > li > ul > li:first-child +li+li {  /*작성일 열 크기*/
+  width:20%;
+} 
+
+
+#divPaging { /* 숫자 */
+  clear:both; 
+  position: absolute;
+  width:178px; 
+  height:60px;
+  top:840px;
+  left: 884px;
+}
+
+#divPaging > div { /* 숫자 이동하는 것 */
+  float:left; /* 정렬하기 위해 사용한 것 */
+  width: 20px;
+  margin:0 auto;
+
+}
+
+#liSearchOption {
+  clear:both; /* 사진 주위로 글자가 따라 붙지 않게 하는 것 */
+}
+
+.left {
+  text-align : left;
+}
+
+.div5 {
+  position: absolute;
+  width: 152px;
+  height: 60px;
+  background-color:#007b4d;
+  border-radius: 20px;
+  margin-top: 800px;
+  right: 369px;
+  font-family: noto;
+  font-size: 20pt;
+  text-color:#ffffff;
+  text-align: center;
+}

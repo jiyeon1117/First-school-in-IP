@@ -1,0 +1,18 @@
+DROP TABLE qna;
+
+CREATE DATABASE qna default character set utf8;
+
+create table qna(
+   num int primary key auto_increment,
+   categorie varchar(20) not null,
+   title varchar(100) not null,
+   content text not null,
+   date timestamp default now(),
+   answer text);
+
+alter table qna modify column number int not null auto_increment;
+alter table qna auto_increment=1;
+set @count = 0;
+
+
+insert into qna values(default, '전체', '안녕하세여', '로드뷰 아름답네요 잘만들었어요',default, default);
