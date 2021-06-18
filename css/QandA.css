@@ -125,10 +125,16 @@ ul, li{   /* listview 안에 사용하는 것들 */
 
 #liSearchOption {
   clear:both; /* 사진 주위로 글자가 따라 붙지 않게 하는 것 */
+  width: 386px;
+  height: 40px;
+  left: 1138px;
+  top: 296px;
+  border: 1px;
+  position: absolute;
 }
 
 .left {
-  text-align : left;
+  text-align : left; /* 왼쪽 정렬 */
 }
 
 .div5 {
