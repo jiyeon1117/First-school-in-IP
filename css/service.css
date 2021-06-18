@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 1200px) {
   .service-title-text{
+    margin: 0 32% 0 32%;
     margin-top: 195px;
   }
 }
@@ -52,9 +53,11 @@
 
 @media screen and (max-width: 1200px) {
   .service-subtext1{
+    margin: 0 26% 0 26%;
     margin-top: 280px;
   }
   .service-subtext2{
+    margin: 0 28% 0 28%;
     margin-top: 315px;
   }
 }

@@ -1,0 +1,21 @@
+/* 검색 창 위치 */
+.search {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+/* 검색 창 설정 */
+.search-input {
+  width: 386px;
+  border: 1px solid #454545;
+  padding: 6px;
+  outline: none;
+  font-family: "Noto Sans KR Regular";
+  font-size: 16px;
+}
+/* 검색 창 안 검색 이미지 */
+.list-search input{
+  background: url(../images/search.png) no-repeat 95% 40%;
+  box-sizing: border-box;
+  padding-left: 24px;
+}

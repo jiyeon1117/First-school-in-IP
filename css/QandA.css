@@ -5,73 +5,42 @@
   font-family: noto;
 }
 
-.div1 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 370px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
+button{
+  border: none;
+  outline: none;
 }
 
-.div2 {
-  position: absolute;
+.menu-button {
+  background-color: #acacac;
+  border-radius: 20px;
   width: 280px;
   height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 670px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-  
-}
-
-.div3 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 970px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-}
-
-.div4 {
-  position: absolute;
-  width: 280px;
-  height: 100px;
-  background-color:#acacac;
-  border-radius: 20px;
-  margin-top: 99px;
-  left: 1270px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: noto;
-  font-size: 20px;
-}
-
-.click_btn {
-  background: #007b4d;
-  font-family: noto;
-  font-size: 20px;
+  padding: 3px;
+  /* 폰트 값 적용 */
+  font-family: "Noto Sans KR";
+  font-weight: bold; 
   color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18pt;
 }
+
+
+.div5 {
+  position: absolute;
+  width: 152px;
+  height: 60px;
+  background-color:#007b4d;
+  border-radius: 20px;
+  margin-top: 800px;
+  margin-left: 369px;
+  font-family: "Noto Sans KR Medium";
+  font-size: 20pt;
+  color:#ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
 
 .listview{ /* 위에 있는 상단바 크기 지정 */
   line-height:5em;        
@@ -158,18 +127,4 @@ ul, li{   /* listview 안에 사용하는 것들 */
 
 .left {
   text-align : left;
-}
-
-.div5 {
-  position: absolute;
-  width: 152px;
-  height: 60px;
-  background-color:#007b4d;
-  border-radius: 20px;
-  margin-top: 800px;
-  right: 369px;
-  font-family: noto;
-  font-size: 20pt;
-  text-color:#ffffff;
-  text-align: center;
 }

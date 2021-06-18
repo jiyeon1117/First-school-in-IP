@@ -1,23 +1,86 @@
 @charset "utf-8";
 
+#function{
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
 .function{
-  display: block;
-  position: absolute;
+  margin: 270px 42% 0 42%;
+  position: relative;
   font-family: "Noto Sans KR";
   font-weight: bold;
   font-size: 30pt;
   color: #010101;
   white-space: nowrap;
-  top: 1875px;
-  left: 830px;
 }
 
 .func-box{
+  position: relative;
+  display: block;
+  margin-top: 38px;
+  margin-left: auto;
+  margin-right: auto;
   width: 1180px;
   height: 700px;
-  position: absolute;
   border-radius: 22px;
   box-shadow: 0px 0px 27px 2px #f4f4f4;
-  top: 2000px;
-  left: 370px;
+}
+
+.function-title-text{
+  position: relative;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  margin-top: -400px;
+  margin-left: 57%;
+  font-size: 30pt;
+  color: #010101;
+  white-space: nowrap;
+}
+
+.function-subtext1{
+  position: relative;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  margin-left: 57%;
+  font-size: 20pt;
+  color: #010101;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .function{
+    margin: 0 28% 0 28%;
+    margin-top: 670px;
+  }
+  .func-box{
+    width: 90%;
+    height: 100%;
+  }
+  #function{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 70%;
+  }
+  .function-title-text{
+    display: inline;
+    margin-left: 14%;
+  }
+  .function-subtext1{
+    line-height: 10px;
+    margin-left: 14%;
+    padding: 0 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .function-title-text{
+    font-size: 26pt;
+    margin-left: 14%;
+  }
+  .function-subtext1{
+    font-size: 18pt;
+  }
 }
