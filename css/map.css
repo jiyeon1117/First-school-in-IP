@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@font-face{
+  src: url("font/NotoSansCJKKr-Bold.otf");
+  font-family: noto;
+}
+
+.textbox{
+  position: relative;
+  font-size: 25px;
+  font-family: noto;
+  text-decoration: black;
+  font-weight: 700;
+  margin-top: 110px;
+  margin-left: 332px;
+}
+
+.option{
+  position: relative;
+  margin-left: 333px;
+  margin-top: 36px;
+}
+
+#s1{
+  width: 229px;
+  height: 35px;
+  font-family: noto;
+  border: 1px solid="#000000";
+}
+
+.layer {
+  margin-left: 339px;
+  top: 19px;
+}

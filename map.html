@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/map.css">
   <link rel="shortcut icon" href="images/web_logo.png">
 </head>
 
@@ -33,6 +34,31 @@
   <img id="banner" src="images/small-banner.jpg">
   <p class="map-small-banner-title">교무실맵</p>
   <p class="map-small-banner-text">교무실의 위치와 자리배치도를 한 눈에 볼 수 있습니다.</p>
+
+   <!-- 교무실 맵이라는 걸 알리는 텍스트 -->
+   <div class="textbox">교무실 맵</div>
+
+   <!-- 교무실 층마다 나누는 옵션 -->
+   <div class="option">
+    <select id="s1" onchange="window.open(value,'_blank');">
+      <option selected value="2"></option>
+      <option value="map.html">2층</option>
+      <option value="map3.html">3층</option>
+      <option value="map4.html">4층</option>
+    </select> 
+  </div>
+
+  <!-- 1교무실 화면 생성 -->
+  <img src ="images/layer28.png" class="layer" alt="Workplace" usemap="#layermap">
+  <map name="layermap">
+    <area shape="rect" coords="791,334,1041,427" alt="map" href="map2_1.html">
+
+  <!-- 2교무실 화면 생성 -->
+    <area shape="rect" coords="529,5,652,113" alt="map" href="map2_2.html">
+
+  <!-- 3교무실 생성 -->
+    <area shape="rect" coords="330,90,456,195" alt="map" href="map2_3.html">
+  </map>
 
   <!-- 푸터 -->
   <div class="foot">

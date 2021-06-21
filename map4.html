@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>첫 등교는 ip로!</title>
+  <script src="js/header-color-change.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="shortcut icon" href="images/web_logo.png">
+</head>
+
+<body>
+  <div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="navbar">
+        <!-- 로고 -->
+        <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+        <div class="leftmenu">
+          <div class="tab">
+            <li class="menu"><a href="roadview.html">로드뷰</a></li>
+            <li class="menu"><a href="map.html" id="click">교무실 맵</a></li>
+            <li class="menu"><a href="QandA.html">Q&A</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
+  </div>
+
+  <!-- 배너 -->
+  <img id="banner" src="images/small-banner.jpg">
+  <p class="map-small-banner-title">교무실맵</p>
+  <p class="map-small-banner-text">교무실의 위치와 자리배치도를 한 눈에 볼 수 있습니다.</p>
+
+  <!-- 교무실 맵이라는 걸 알리는 텍스트 -->
+  <div class="textbox">교무실 맵</div>
+
+   <!-- 교무실 층마다 나누는 옵션 -->
+  <div class="option">
+    <select id="s1" onchange="window.open(value,'_blank');">
+      <option selected value="2"></option>
+      <option value="map.html">2층</option>
+      <option value="map3.html">3층</option>
+      <option value="map4.html">4층</option>
+    </select> 
+  </div>
+</body>
+</html> 
