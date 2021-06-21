@@ -5,7 +5,7 @@
   font-family: noto;
 }
 
-button{
+button, input{
   border: none;
   outline: none;
 }
@@ -36,6 +36,19 @@ button{
   margin-left: 369px;
   font-family: "Noto Sans KR Medium";
   font-size: 20pt;
+  color:#ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit {
+  width: 125px;
+  height: 55px;
+  background-color:#007b4d;
+  border-radius: 20px;
+  margin-left: auto;
+  font-family: "Noto Sans KR Medium";
+  font-size: 18pt;
   color:#ffffff;
   text-align: center;
   cursor: pointer;

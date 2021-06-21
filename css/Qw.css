@@ -1,3 +1,32 @@
+.input-title {
+    width: 450px;
+    height: 25px;
+    font-family: noto;
+    font-size: 15px;
+    color: #454545;
+    border: 1px solid #454545;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.input-text {
+    width: 600px;
+    height: 300px;
+    resize: none;
+  
+    padding: 6px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #454545;
+    background-position: 12px;
+    padding-left: 16px;
+    box-sizing: border-box;
+  
+    font-family: "나눔스퀘어라운드OTF Light";
+    font-size: 15px;
+  }
+
 table.table2{
     border-collapse: separate;
     border-spacing: 1px;
