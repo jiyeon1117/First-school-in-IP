@@ -73,14 +73,6 @@
   height: 400px;
   overflow: auto;
 }
-<<<<<<< HEAD
-#box::-webkit-scrollbar {
-  width: 6px; /*스크롤바의 너비
-}
-#box::-webkit-scrollbar-thumb {
-  background-color: #005438; /*스크롤바의 색상
-}
-=======
 
 #box::-webkit-scrollbar {
   width: 6px; /*스크롤바의 너비
@@ -90,7 +82,6 @@
   background-color: #005438; /*스크롤바의 색상
 }
 
->>>>>>> master
 #box::-webkit-scrollbar-track {
   background-color: white; /*스크롤바 트랙 색상
 }
@@ -227,9 +218,4 @@
   font-size: 15pt;
   font-family: noto;
   text-decoration: black;
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> master
