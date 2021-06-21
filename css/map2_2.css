@@ -12,10 +12,17 @@
   margin-top: 88px;
   margin-left: 370px;
   border-radius: 20px;
+<<<<<<< HEAD
   background-color: wheat;
   background-color: white;
   box-shadow: 2px 1px 27px 2px #cecdcd;
 } 
+=======
+  background-color: white;
+  box-shadow: 2px 1px 27px 2px #cecdcd;
+  text-align: center;
+}
+>>>>>>> master
 
 #title{
   position: relative;
@@ -40,7 +47,11 @@
 .class2{
   position: relative;
   width: 500px;
+<<<<<<< HEAD
   height: 430px;
+=======
+  height: 450px;
+>>>>>>> master
   margin-left: 645px;
   top: -500px;
 }
@@ -74,12 +85,24 @@
   height: 400px;
   overflow: auto;
 }
+<<<<<<< HEAD
 #box::-webkit-scrollbar {
   width: 6px; /*스크롤바의 너비
 }
 #box::-webkit-scrollbar-thumb {
   background-color: #005438; /*스크롤바의 색상
 }
+=======
+
+#box::-webkit-scrollbar {
+  width: 6px; /*스크롤바의 너비
+}
+
+#box::-webkit-scrollbar-thumb {
+  background-color: #005438; /*스크롤바의 색상
+}
+
+>>>>>>> master
 #box::-webkit-scrollbar-track {
   background-color: white; /*스크롤바 트랙 색상
 }

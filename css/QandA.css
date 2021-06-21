@@ -54,7 +54,6 @@ button, input{
   cursor: pointer;
 }
 
-
 .listview{ /* 위에 있는 상단바 크기 지정 */
   line-height:5em;        
   font-family: noto;
@@ -146,5 +145,5 @@ ul, li{   /* listview 안에 사용하는 것들 */
 
 
 .left {
-  text-align : left;
+  text-align : left; /* 왼쪽 정렬 */
 }
