@@ -26,7 +26,7 @@
         border-bottom: 1px solid #ccc;
     }
     </style>";
-
+    
     echo "<table><tbody>";
 
     if (mysqli_num_rows($result) > 0) {
