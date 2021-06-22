@@ -27,6 +27,15 @@
     }
     </style>";
     
+    echo "<script>
+            const password = 1234;
+            password_chk = prompt('관리자 비밀번호를 입력해주세요'); 
+            if(password_chk == passwrod){
+                alert('비밀번호 확인');
+            }else{
+                alert('비밀번호 틀림');          
+        </script>";
+
     echo "<table><tbody>";
 
     if (mysqli_num_rows($result) > 0) {
