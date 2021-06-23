@@ -8,6 +8,11 @@ include './src/db_conn.php';
 <link rel="stylesheet" href="css/list.css">
 </head>
 <body>
+    <!-- 배너 -->
+  <img id="banner" src="images/small-banner.jpg">
+  <p class="map-small-banner-title">교무실맵</p>
+  <p class="map-small-banner-text">교무실의 위치와 자리배치도를 한 눈에 볼 수 있습니다.</p>
+
 <div id="board_area"> 
     <table class="list-table">
       <thead>
