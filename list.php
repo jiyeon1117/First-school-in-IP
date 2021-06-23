@@ -34,7 +34,7 @@ include './src/db_conn.php';
       <tbody>
         <tr>
           <td width="70"><?php echo $qna['num']; ?></td>
-          <td width="500"><a href="read.php?idx=<?php echo $qna["num"];?>"><?php echo $title;?></a></td>
+          <td width="500"><a href="read.php?num=<?php echo $qna["num"];?>"><?php echo $title;?></a></td>
           <td width="100"><?php echo $qna['date']?></td>
         </tr>
       </tbody>
