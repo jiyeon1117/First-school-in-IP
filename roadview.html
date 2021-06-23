@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-12--">
+        <li class="text">1,2학년 반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-1----">
+        <li class="text">1층 강당에서 계단으로 넘어가는 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-1---">
+        <li class="text">1층 강당으로 내려가는 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-1---">
+        <li class="text">1층 끝쪽으로 가는 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-1-">
+        <li class="text">1층 음악실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-1--">
+        <li class="text">1층 중앙계단 끝쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-1--">
+        <li class="text">1층 중앙계단 중앙쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-1----">
+        <li class="text">1층 중앙계단 트로피 있는 곳</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-1--">
+        <li class="text">1층 학생회실 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-1--">
+        <li class="text">1층 학생회실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-1-4-">
+        <li class="text">1학년 4반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-1-5-">
+        <li class="text">1학년 5반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-1-6-">
+        <li class="text">1학년 6반 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-1-6">
+        <li class="text">1학년 6반</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-2-1-">
+        <li class="text">2층 1교무실 끝쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-2-1-">
+        <li class="text">2층 1교무실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-2-1-">
+        <li class="text">2층 1교무실 중간라인</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-2-23">
+        <li class="text">2층 2~3교무실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-2--">
+        <li class="text">2층 교무실 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-2--">
+        <li class="text">2층 교무실 수학교실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2-">
+        <li class="text">2층 교장실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-2-">
+        <li class="text">2층 끝계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-2-">
+        <li class="text">2층 보건실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-2-">
+        <li class="text">2층 중앙계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-2---">
+        <li class="text">2층 중앙계단으로 가는 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-2---">
+        <li class="text">2층 중앙계단으로 가는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-2--">
+        <li class="text">2층 진로 체험실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-2--">
+        <li class="text">2층 행정실 라인</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-2-3---">
+        <li class="text">2층에서 3층으로 올라가는 끝 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-2--">
+        <li class="text">2층으로 가는 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-2-1-">
+        <li class="text">2학년 1반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-2-3-">
+        <li class="text">2학년 3반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-2-5-">
+        <li class="text">2학년 5반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-2-6-">
+        <li class="text">2학년 6반 앞</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-3-5--">
+        <li class="text">3층 5교무실 끝 복도라인</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-3-5-">
+        <li class="text">3층 5교무실 끝쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-3-5--">
+        <li class="text">3층 5교무실 라인 중간</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-3-5-">
+        <li class="text">3층 5교무실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-3-5--">
+        <li class="text">3층 5교무실로 가는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-3----">
+        <li class="text">3층 끝 계단으로 가는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-3--">
+        <li class="text">3층 끝계단 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-3--">
+        <li class="text">3층 끝쪽 라인</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-3-">
+        <li class="text">3층 방송실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-3--">
+        <li class="text">3층 복도 끝</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-3--">
+        <li class="text">3층 세미나실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-3-">
+        <li class="text">3층 실습실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-3----">
+        <li class="text">3층 전공실 라인 끝쪽 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-3---">
+        <li class="text">3층 전공실 반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-3--">
+        <li class="text">3층 전공실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-3--">
+        <li class="text">3층 전공실 중간</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-3-">
+        <li class="text">3층 중간계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-3-">
+        <li class="text">3층 중간복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-3-1--">
+        <li class="text">3학년 1반 밑쪽 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-3-1-">
+        <li class="text">3학년 1반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-3-1--">
+        <li class="text">3학년 1반 쪽 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-3-2----">
+        <li class="text">3학년 2반 앞에 있는 영어 실습실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-3-2-">
+        <li class="text">3학년 2반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-3-3--">
+        <li class="text">3학년 3반 뒤쪽 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-3-3--2">
+        <li class="text">3학년 3반 입구 (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-3-5-">
+        <li class="text">3학년 5반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-3-4-">
+        <li class="text">3학년 4반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-3-4--">
+        <li class="text">3학년 4반 중간 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62--">
+        <li class="text">가사실습실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-3-4--">
+        <li class="text">3학년 4반으로 가는 중간계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-3-6-">
+        <li class="text">3학년 6반 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-3-6---">
+        <li class="text">3학년 6반 쪽으로 가는 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-3-6--">
+        <li class="text">3학년 6반으로 가는 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-3-6-">
+        <li class="text">3학년 6반쪽 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-3---">
+        <li class="text">3학년 건물로 가는 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-3----">
+        <li class="text">3학년 건물로 가는 입구 끝</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-3---">
+        <li class="text">3학년 건물로 가는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-3----">
+        <li class="text">3학년 뒷반 위쪽 강당 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-3-----">
+        <li class="text">3학년 라인 쪽 마지막 층 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-3--">
+        <li class="text">3학년 코어스페이스 안</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-4-1---">
+        <li class="text">4층 1학년 교실 들어가는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-4-2-3---">
+        <li class="text">4층 2학년 3반으로 가는 상담실 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-4--">
+        <li class="text">4층 계단 끝</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-4----">
+        <li class="text">4층 교실 끝 쪽 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-4-">
+        <li class="text">4층 상상카페</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-4--">
+        <li class="text">4층 스튜디오 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-4---">
+        <li class="text">4층 올라가는 상담실 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-4-">
+        <li class="text">4층 중간복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-4--">
+        <li class="text">4층으로 들어가는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-4----">
+        <li class="text">4층으로 올라가는 중간 복도 끝</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84--1-">
+        <li class="text">강당 1층 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85--">
+        <li class="text">강당 무대쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86--">
+        <li class="text">강당 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87--">
+        <li class="text">강당 중앙</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88---">
+        <li class="text">강당에서 나오는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89---">
+        <li class="text">강당으로 가는 쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90---">
+        <li class="text">강당으로 들어간 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91---">
+        <li class="text">경비실 있는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92--">
+        <li class="text">급식실 끝쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93---">
+        <li class="text">급식실 나가는 쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94--">
+        <li class="text">급식실 안쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95--">
+        <li class="text">급식실 중앙쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-">
+        <li class="text">기숙사</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97----">
+        <li class="text">나가는 중앙 쪽 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98---">
+        <li class="text">나가는 중앙계단 쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99----">
+        <li class="text">남자 화장실 쪽 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100--">
+        <li class="text">뉴미디어회의실 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101--">
+        <li class="text">다목적실 안쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102---">
+        <li class="text">다목적실로 가는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103---">
+        <li class="text">다목적실로 가는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-">
+        <li class="text">도서실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105----">
+        <li class="text">매점 가기 전 복도</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106----">
+        <li class="text">매점 가기 전 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107--">
+        <li class="text">매점 라인</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108--">
+        <li class="text">매점 안</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-----">
+        <li class="text">매점에서 밖으로 나가는 계단 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-----">
+        <li class="text">매점에서 밖으로 나가는 중간 계단</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111---">
+        <li class="text">매점으로 가는 다리</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-----">
+        <li class="text">매점으로 가는 밖에 있는 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113--">
+        <li class="text">미림여고 교장실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114--">
+        <li class="text">스튜디오 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115---">
+        <li class="text">쓰레기 버리는 곳</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116----">
+        <li class="text">쓰레기 버리는 창구 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117--">
+        <li class="text">쓰레기장 입구</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-">
+        <li class="text">운동장</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119---">
+        <li class="text">전공실 끝 쪽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-">
+        <li class="text">정문</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121---">
+        <li class="text">정원에서 나가는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122---">
+        <li class="text">중앙계단으로 나가는 길</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-">
+        <li class="text">행정실</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124----">
+        <li class="text">매점 들어가기 전 입구</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="images/play.png">
+  <img class="icon on" src="images/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="images/fullscreen.png">
+  <img class="icon on" src="images/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="images/expand.png">
+  <img class="icon on" src="images/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="images/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="images/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="images/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="images/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="images/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="images/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

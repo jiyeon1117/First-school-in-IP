@@ -12,6 +12,7 @@
   margin-top: 88px;
   margin-left: 370px;
   border-radius: 20px;
+
   background-color: white;
   box-shadow: 2px 1px 27px 2px #cecdcd;
   text-align: center;
@@ -74,11 +75,9 @@
   height: 400px;
   overflow: auto;
 }
-
 #box::-webkit-scrollbar {
   width: 6px; /*스크롤바의 너비
 }
-
 #box::-webkit-scrollbar-thumb {
   background-color: #005438; /*스크롤바의 색상
 }
