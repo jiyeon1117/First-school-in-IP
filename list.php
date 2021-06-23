@@ -19,7 +19,7 @@ include './src/db_conn.php';
         </thead>
         <?php
         // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
-          $sql = "select * from qna order by num asc limit 0,5"; 
+          $sql = "SELECT * FROM qna WHERE answer IS NOT NULL ORDER BY num ASC LIMIT 0 , 5"; 
           $result = mysqli_query($conn, $sql);
             while($qna = mysqli_fetch_assoc($result))
             {
