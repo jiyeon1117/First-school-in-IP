@@ -12,7 +12,5 @@ create table qna(
 
 alter table qna modify column number int not null auto_increment;
 alter table qna auto_increment=1;
-set @count = 0;
-
-
-insert into qna values(default, '전체', '안녕하세여', '로드뷰 아름답네요 잘만들었어요',default, default);
+set @cnt = 0;
+update qna set qna.num = @cnt:=@cnt+1;
