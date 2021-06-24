@@ -31,8 +31,6 @@
 
   <!-- 배너 -->
   <img id="banner" src="images/map-banner.jpg">
-  <p class="map-small-banner-title">교무실맵</p>
-  <p class="map-small-banner-text">교무실의 위치와 자리배치도를 한 눈에 볼 수 있습니다.</p>
 
   <!-- 교무실 맵이라는 걸 알리는 텍스트 -->
   <div class="textbox">교무실 맵</div>
@@ -41,12 +39,12 @@
   <div class="option">
     <select id="s1" onchange="window.open(value,'_self');">
       <option value="map.html">2층</option>
-      <option value="map3.html">3층</option>
+      <option value="map3.html" selected>3층</option>
     </select> 
   </div>
   
   <!-- 4교무실 화면 생성 -->
-  <img src ="images/layer29.png" class="layer" alt="Workplace" usemap="#layermap">
+  <img src ="images/layer29.png" class="map3-image" alt="Workplace" usemap="#layermap">
   <map name="layermap">
     <area shape="rect" coords="357,194,529,300" alt="map" href="map3_4.html">
 

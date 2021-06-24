@@ -42,11 +42,6 @@
           </tr>
 
           <tr>
-          <td>카테고리</td>
-          <td><input id="categorie" type="text" name="categorie" size="20" placeholder="카테고리입니다." required></td>
-          </tr>
-
-          <tr>
           <td>내용</td>
           <td><textarea name = content id="content" type = text cols=85 rows=15 placeholder="내용입니다." required></textarea></td>
           </tr>

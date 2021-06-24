@@ -6,13 +6,29 @@ include './src/db_conn.php';
 <meta charset="UTF-8">
 <title>게시판</title>
 <link rel="stylesheet" href="css/list.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+<div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="navbar">
+        <!-- 로고 -->
+        <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+        <div class="leftmenu">
+          <div class="tab">
+            <li class="menu"><a href="roadview.html">로드뷰</a></li>
+            <li class="menu"><a href="map.html">교무실 맵</a></li>
+            <li class="menu"><a href="list.php">Q&A</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
+  </div>
     <!-- 배너 -->
   <img id="banner" src="./images/qna-banner.jpg">
-  <p class="map-small-banner-title">교무실맵</p>
-  <p class="map-small-banner-text">교무실의 위치와 자리배치도를 한 눈에 볼 수 있습니다.</p>
-
 <div id="board_area"> 
     <table class="list-table">
       <thead>
