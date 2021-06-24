@@ -28,7 +28,8 @@
     </style>
   </head>
   <body>
-    <h1>로그인</h1>
+    <center>
+    <h1>로그인</h1>    
     <form action="login.php" method="POST">
       <p><input type="password" name="password" placeholder="비밀번호" required></p>
       <p><input type="submit" value="로그인"></p>
@@ -38,5 +39,6 @@
         }
       ?>
     </form>
+    <center>
   </body>
 </html>
