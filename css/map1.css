@@ -5,6 +5,14 @@
   font-family: noto;
 }
 
+.hint-text{
+  font-family: noto;
+  position: relative;
+  margin-left: 332px;
+  font-size: 24px;
+  color: #007b4d;
+}
+
 .textbox{
   position: relative;
   font-size: 25px;
@@ -42,4 +50,8 @@
   height: 365px;
   margin-left: 339px;
   top: 40px;
+}
+
+.cursor{
+  cursor: pointer;
 }

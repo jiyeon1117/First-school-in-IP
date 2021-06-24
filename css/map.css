@@ -8,7 +8,6 @@
 .hint-text{
   font-family: noto;
   position: relative;
-  margin-top: 110px;
   margin-left: 332px;
   font-size: 24px;
   color: #007b4d;
@@ -40,4 +39,8 @@
 .layer {
   margin-left: 339px;
   top: 19px;
+}
+
+.cursor{
+  cursor: pointer;
 }

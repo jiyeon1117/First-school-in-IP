@@ -3,6 +3,7 @@
 
     echo "<style>
     table{
+        align:center;
         border-collapse: separate;
         border-spacing: 1px;
         text-align: left;
@@ -17,7 +18,7 @@
         vertical-align: top;
         border-bottom: 1px solid #ccc;
     }
-    td{
+    td{       
         width: 100px;
         padding: 10px;
         vertical-align: top;
@@ -32,8 +33,30 @@
 <meta charset="UTF-8">
 <title>게시판</title>
 <link rel="stylesheet" type="text/css" href="css/read.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" 
+  href="css/header.css">
 </head>
 <body>
+<div class="container">
+    <aside id="aisdeLeft"></aside>
+    <section id="section">
+      <div class="navbar">
+        <!-- 로고 -->
+        <a href="index.html"><img class="logo-image" src="images/logo.png"></a>
+        <div class="leftmenu">
+          <div class="tab">
+            <li class="menu"><a href="roadview.html">로드뷰</a></li>
+            <li class="menu"><a href="map.html">교무실 맵</a></li>
+            <li class="menu"><a href="list.php">Q&A</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside id="aisdeRight"></aside>
+  </div>
+  
+  <img id="banner" src="./images/qna-banner.jpg">
 	<?php
 		$bno = $_GET['num']; 
 		$sql = "select title, content,date, answer from qna where num= '".$bno."' and answer is not null"; 
@@ -54,11 +77,13 @@
             echo "<th>답변 내용: </th> <td>".$row["answer"]."</td>";
             } 
         echo "</table></tbody>";?>
+    <center>
 	<div id="bo_ser">
 		<ul>
-			<a href="/">[목록으로]</a>
+			<a href="./list.php">[목록으로]</a>
 		</ul>
 	</div>
+        </center>
 </div>
 </body>
 </html>
