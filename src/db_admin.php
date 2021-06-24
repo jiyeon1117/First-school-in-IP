@@ -5,12 +5,19 @@
 </head> 
 <body> 
     
-    <td>답변 내용: </td>
+    <td>답변 번호/내용: </td>
     <td><textarea id='number' name=admin-content cols=10 rows=1></textarea></td>
     <td><textarea id='answer' name=admin-content cols=30 rows=4></textarea></td>
-    <td><button name=12 onclick='update()'>답변</button></td>
-    </tr>";
+    <td><button name=12 onclick='update()'>답변</button></td><br>
+    <td>삭제할 번호: </td>
+    <td><textarea id='delete' name=admin-content cols=10 rows=1></textarea></td>
+    <td><button name=12 onclick='delet()'>삭제</button></td>
+    </tr>
     <script>
+            function delet() {
+                var query = "DELETE FROM qna WHERE num = " +document.getElementById("delete").value;
+                location.href="delete.php?q= "+query;
+            }
             function update() {
                 var query = "UPDATE qna SET answer = " + "'"+document.getElementById("answer").value +"' " + " WHERE num = " + document.getElementById("number").value;
                 location.href="upload.php?q= "+query;                
@@ -19,7 +26,7 @@
 
 <?php include('db_conn.php');
 
-    $sql = "SELECT title, categorie, content, date, num FROM qna WHERE answer is null and num = num";
+    $sql = "SELECT num, title, content, date, answer FROM qna order by answer";
     // "UPDATE qna SET answer = * WHERE num = *"
     $result = mysqli_query($conn, $sql);
     
@@ -34,14 +41,14 @@
         margin : 20px 10px;
     }
     tr{
-        width: 100px;
+        width: 400px;
         padding: 10px;
         font-weight: bold;
         vertical-align: top;
         border-bottom: 1px solid #ccc;
     }
     td{
-        width: 100px;
+        width: 400px;
         padding: 10px;
         vertical-align: top;
         border-bottom: 1px solid #ccc;
@@ -61,13 +68,13 @@
             echo"<th>제목 : </th><td>".$row["title"]."</td>";
             echo"</tr>";
             echo"<tr>";
-            echo"<th>카테고리 : </th><td>".$row["categorie"]."</td>";
-            echo"</tr>";
-            echo"<tr>";
             echo"<th>내용 : </th><td>".$row["content"]."</td>";
             echo"</tr>";
             echo"<tr>";
             echo"<th>날짜 : </th><td>".$row["date"]."</td>";
+            echo"</tr>";
+            echo"<tr>";
+            echo"<th>답변 : </th><td>".$row["answer"]."</td>";
             echo"</tr>";
             echo"<tr><th><td>\n\n</td></th></tr>";
         }
