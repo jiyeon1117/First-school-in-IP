@@ -22,7 +22,19 @@
   font-size: 44pt;
   color: #007b4d;
   letter-spacing: 1px;
-  top: 327px;
+  top: 350px;
+  left: 364px;
+}
+
+.banner-text2{
+  position: absolute;
+  white-space: nowrap;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 22pt;
+  color: #007b4d;
+  letter-spacing: 1px;
+  top: 464px;
   left: 364px;
 }
 
