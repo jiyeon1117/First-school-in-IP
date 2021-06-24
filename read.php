@@ -44,7 +44,7 @@
         text-align: left;
         line-height: 1.5;
         border-top: 1px solid #ccc;
-        margin : 20px 10px;
+        margin : 30px 20px;
       }
       table.table2 tr {
         width: 100px;
@@ -67,22 +67,22 @@
             while($row = mysqli_fetch_assoc($result)) { ?>
               <tr>
               <td width="50">제목</td>
-              <td width="1000"><?php echo $row["title"] ?></td>
+              <td width="800"><?php echo $row["title"] ?></td>
               </tr>
 
               <tr>
               <td width="50">날짜</td>
-              <td width="1000"><?php echo $row["date"] ?></td>
+              <td width="800"><?php echo $row["date"] ?></td>
               </tr>
 
               <tr>
               <td width="50">내용</td>
-              <td width="1000"><?php echo $row["content"] ?></td>
+              <td width="900"><?php echo $row["content"] ?></td>
               </tr>
 
               <tr>
               <td width="50">답변</td>
-              <td width="1000"><?php echo $row["answer"] ?></td>
+              <td width="800"><?php echo $row["answer"] ?></td>
               </tr>
             <?php }?>
         </table>
