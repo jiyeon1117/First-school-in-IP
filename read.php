@@ -54,7 +54,6 @@
         border-bottom: 1px solid #ccc;
       }
       table.table2 td {
-        width: 500px;
         padding: 10px;
         vertical-align: top;
         border-bottom: 2px solid #ccc;
@@ -67,23 +66,23 @@
           <?php 
             while($row = mysqli_fetch_assoc($result)) { ?>
               <tr>
-              <td width="70">제목</td>
-              <td><?php echo $row["title"] ?></td>
+              <td width="50">제목</td>
+              <td width="800"><?php echo $row["title"] ?></td>
               </tr>
 
               <tr>
-              <td width="70">날짜</td>
-              <td><?php echo $row["date"] ?></td>
+              <td width="50">날짜</td>
+              <td width="800"><?php echo $row["date"] ?></td>
               </tr>
 
               <tr>
-              <td width="70">내용</td>
-              <td><?php echo $row["content"] ?></td>
+              <td width="50">내용</td>
+              <td width="800"><?php echo $row["content"] ?></td>
               </tr>
 
               <tr>
-              <td width="70">답변</td>
-              <td><?php echo $row["answer"] ?></td>
+              <td width="50">답변</td>
+              <td width="800"><?php echo $row["answer"] ?></td>
               </tr>
             <?php }?>
         </table>
